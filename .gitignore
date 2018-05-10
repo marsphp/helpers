@@ -1,0 +1,7 @@
+.idea
+.vscode
+.DS_Store
+.tmp
+vendor
+phpunit.xml
+composer.lock
