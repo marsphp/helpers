@@ -34,7 +34,7 @@ class ArrayHelpers
     }
 
     /**
-     * FFunction array_get()
+     * Function array_get()
      *
      * @param $array
      * @param $key
@@ -64,5 +64,34 @@ class ArrayHelpers
         }
 
         return $array;
+    }
+
+    /**
+     * Function array_first()
+     *
+     * @param $array
+     * @param callable|null $callback
+     * @param null $default
+     * @return null
+     */
+    public static function first($array, callable $callback = null, $default = null)
+    {
+        if (is_null($callback)) {
+            if (empty($array)) {
+                return $default;
+            }
+
+            foreach ($array as $item) {
+                return $item;
+            }
+        }
+
+        foreach ($array as $key => $value) {
+            if (call_user_func($callback, $value, $key)) {
+                return $value;
+            }
+        }
+
+        return $default;
     }
 }
