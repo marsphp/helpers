@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/marsphp/helpers.svg?branch=master)](https://travis-ci.org/marsphp/helpers) [![Latest Stable Version](https://poser.pugx.org/mars/helpers/v/stable)](https://packagist.org/packages/mars/helpers) [![Total Downloads](https://poser.pugx.org/mars/helpers/downloads)](https://packagist.org/packages/mars/helpers) [![Latest Unstable Version](https://poser.pugx.org/mars/helpers/v/unstable)](https://packagist.org/packages/mars/helpers) [![License](https://poser.pugx.org/mars/helpers/license)](https://packagist.org/packages/mars/helpers)
 
 # Helpers
-Mars framework Helpers
+Mars Helpers
 
 ## Documentation
 Mars Framework - Helpers package [documentation](DOCUMENTATION.md)
