@@ -1,2 +1,2 @@
-# helpers
-Mars framework class helpers
+# Helpers
+Mars framework Helpers package
