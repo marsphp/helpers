@@ -13,3 +13,9 @@ function array_first($array, callable $callback = null, $key = null)
 {
     return ArrayHelpers::first($array, $callback, $key);
 }
+
+/* Array Last */
+function array_last($array, callable $callback = null, $key = null)
+{
+    return ArrayHelpers::last($array, $callback, $key);
+}

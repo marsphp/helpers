@@ -94,4 +94,33 @@ class ArrayHelpers
 
         return $default;
     }
+
+    /**
+     * Function array_last()
+     *
+     * @param $array
+     * @param callable|null $callback
+     * @param null $default
+     * @return null
+     */
+    public static function last($array, callable $callback = null, $default = null)
+    {
+        if (is_null($callback)) {
+            if (empty($array)) {
+                return $default;
+            }
+
+            foreach ($array as $item) {
+                return $item;
+            }
+        }
+
+        foreach ($array as $key => $value) {
+            if (call_user_func($callback, $value, $key)) {
+                return $value;
+            }
+        }
+
+        return $default;
+    }
 }
