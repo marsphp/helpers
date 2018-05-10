@@ -1,0 +1,46 @@
+{
+    "name": "mars/helpers",
+    "description": "Mars PHP framework helpers package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "The Martian Geeks",
+            "email": "contact@themartiangeeks.com"
+        },
+        {
+            "name": "Houssene Dao",
+            "email": "dao.houssene@themartiangeeks.com"
+        },
+        {
+            "name": "Hassane Dao",
+            "email": "dao.hassane@themartiangeeks.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/marsphp/helpers/issues",
+        "source": "https://github.com/marsphp/helpers"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1",
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mars\\Helpers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
